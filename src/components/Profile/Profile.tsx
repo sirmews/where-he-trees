@@ -1,3 +1,5 @@
+import styles from './Profile.module.css';
+
 interface ProfileProps {
   avatar: string;
   handle: string;
@@ -9,7 +11,16 @@ interface ProfileColors {
   color: string;
 }
 
-const Profile = () => (<></>);
+const Profile = () => (
+  <div className={styles.profile}>
+    <img 
+        src="avatar.png"
+        alt="User avatar"
+        className={styles.avatar}
+    />
+    <p className={styles.handle}>@handle</p>
+  </div>
+);
 
 
 export default Profile;
