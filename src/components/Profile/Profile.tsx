@@ -11,7 +11,7 @@ interface ProfileColors {
   color: string;
 }
 
-const Profile = () => (
+const Profile = ({ avatar, handle }: ProfileProps) => (
   <div className={styles.profile}>
     <img 
         src="avatar.png"
