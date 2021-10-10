@@ -3,7 +3,7 @@ import LinkAudio from '../components/Links/LinkAudio';
 import LinkEvents from '../components/Links/LinkEvents';
 
 export const linkTypeRenderer = {
-  CLASSIC: LinkClassic,
-  AUDIO: LinkAudio,
-  EVENTS: LinkEvents,
+  'CLASSIC': LinkClassic,
+  'AUDIO': LinkAudio,
+  'EVENTS': LinkEvents,
 };
