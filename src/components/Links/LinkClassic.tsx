@@ -1,9 +1,9 @@
-interface LinkInterface2 {
+interface LinkInterface {
   name: string;
   url?: string;
 }
 interface LinkClassicProp {
-  link: LinkInterface2
+  link: LinkInterface
 }
 
 const LinkClassic = ({ link }: LinkClassicProp) => (
