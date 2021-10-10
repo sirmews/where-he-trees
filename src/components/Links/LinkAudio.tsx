@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import LinkAudioPlayer from './LinkAudioPlayer';
+import LinkAudioList from './LinkAudioList';
 import styles from './Links.module.css';
 
 interface LinkInterface {
   name: string;
   url: string;
-  track?: TrackInterface
+  track?: TrackInterface;
+  list?: ListItemsInterface;
+}
+
+export interface ListItemsInterface extends Array<ListItemInterface>{}
+
+export interface ListItemInterface {
+  provider: 'APPLE_MUSIC' | 'SOUNDCLOUD' | 'SPOTIFY';
+  name: string;
+  url: string;
 }
 
 export interface TrackInterface {
@@ -39,7 +49,10 @@ const LinkAudio = ({ link }: LinkAudioProp) => {
       }}>
         { link.track ? (
           <LinkAudioPlayer track={link.track}/>
-        ) : ''}
+          ) : ''}
+        { link.list ? (
+            <LinkAudioList list={link.list}/>
+          ) : '' }
       </div>
     </div>
   )

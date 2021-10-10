@@ -21,7 +21,7 @@
 
 .player {
   display: flex;
-  flex-direction: 'row';
+  flex-direction: row;
   padding: 1rem;
   align-items: 'center';
 }
@@ -42,4 +42,24 @@
   display: block;
   padding: 1rem;
   width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.provider {
+  display: flex;
+  flex-direction: row;
+  align-items: 'center';
+  padding: 1rem;
+  gap: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+}
+
+.providericon {
+  flex: 0 0 auto;
 }
