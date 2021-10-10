@@ -1,3 +1,8 @@
+:root {
+  --color-button: #39E09B;
+  --color-text: #FFFFFF;
+}
+
 .app {
   display: flex;
   flex-direction: column;
