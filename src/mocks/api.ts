@@ -17,6 +17,12 @@ const api = {
       type: 'AUDIO',
       name: 'Music',
       url: '',
+      track: {
+        name: 'Mindsets a Threat',
+        album: 'Rage Against The Machine',
+        album_art: "album.jpeg",
+        artist: "Rage Against The Machine",
+      },
       list: [
         {
           provider: 'SPOTIFY',
