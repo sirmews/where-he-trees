@@ -3,7 +3,7 @@ import { linkTypeRenderer } from '../../lib/linkTypeRenderer';
 interface LinkInterface {
   type: string;
   name: string;
-  url?: string;
+  url: string;
 }
 
 type LinkBlock = keyof typeof linkTypeRenderer;

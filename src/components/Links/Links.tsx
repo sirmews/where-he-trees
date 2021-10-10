@@ -3,7 +3,7 @@ import Link from './Link';
 interface LinkInterface {
   type: string;
   name: string;
-  url?: string;
+  url: string;
 }
 
 interface Links extends Array<LinkInterface>{}

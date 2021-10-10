@@ -16,6 +16,7 @@ const api = {
     {
       type: 'AUDIO',
       name: 'Music',
+      url: '',
       list: [
         {
           provider: 'SPOTIFY',
@@ -38,6 +39,7 @@ const api = {
     {
       type: 'EVENTS',
       name: 'Shows',
+      url: '',
       list: [
         {
           provider: 'SONGKICK',

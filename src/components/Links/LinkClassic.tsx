@@ -1,22 +1,26 @@
+import styles from './Links.module.css';
+
 interface LinkInterface {
   name: string;
-  url?: string;
+  url: string;
 }
 interface LinkClassicProp {
   link: LinkInterface
 }
 
-const LinkClassic = ({ link }: LinkClassicProp) => (
-  <div
-    style={{
-      backgroundColor: '#39E09B',
-      padding: '1rem 1.5rem'
-    }}
-  >
-    <a href={link.url} target="_blank" rel="noopener noreferrer">
-      {link.name}
-    </a>
-  </div>
-)
+const LinkClassic = ({ link }: LinkClassicProp) => {
+
+  const visitLink = (url: string) => window.open(url, '_blank', 'noopener');
+
+  return (
+    <div
+      className={styles.classic}
+    >
+      <button className={styles.button} onClick={(e) => visitLink(link.url)}>
+        {link.name}
+      </button>
+    </div>
+  )
+}
 
 export default LinkClassic;
